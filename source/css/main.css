@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Raleway", serif;
+}
+
+.container {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1EDE6;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 165px;
+}
+
+.header__burger-btn{
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #0d00ff;
+}
+
+.burger{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #4C5866;
+    left: 5px;
+}
+
+.burger:nth-child(1){
+transform: translateY(-10px);
+}
+
+.burger:nth-child(2){
+bottom: 13.5px;
+}
+
+.burger:nth-child(3){
+    transform: translateY(6px);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 470px;
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-list {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+}
+
+.link-list {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2C2D35;
+}
