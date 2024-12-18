@@ -30,13 +30,18 @@ body {
     padding: 0 165px;
 }
 
+.bgc{
+    display: flex;
+    max-width: 470px;
+    width: 100%;
+}
+
 .btn_menu {
     display: flex;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 470px;
 }
 
 .header__burger-btn {
@@ -45,23 +50,22 @@ body {
     width: 30px;
     height: 30px;
     border: none;
-    background-color: #0d00ff;
+    padding: 0;
 }
 
 .burger {
     position: absolute;
     width: 20px;
-    height: 3px;
+    height: 2px;
     background-color: #4C5866;
     left: 5px;
 }
 
 .burger:nth-child(1) {
-    transform: translateY(-10px);
+    transform: translateY(-6px);
 }
 
 .burger:nth-child(2) {
-    bottom: 13.5px;
 }
 
 .burger:nth-child(3) {
@@ -140,6 +144,12 @@ body {
         padding: 0 33px;
         position: relative;
     }
+    
+    .bgc{
+        max-width: 710px;
+        align-items: center;
+        justify-content: center;
+    }
 
     .nav-logo {
         display: flex;
@@ -188,33 +198,60 @@ body {
 
 @media (max-width: 420px) {
     .container_header {
-        background-color: white;
+        background-color: #fff;
+        min-height: 130px;
     }
-
-    .navbar {}
-
-    .nav-logo {}
-
-    .btn_menu {}
-
-    .header__burger-btn {}
-
-    .burger {}
-
-    .nav-list {}
-
-    .menu {}
-
-    .menu-list {}
-
-    .list {}
-
-    .link-list {}
-
-    .bye {}
-
-    .btn_bye {}
-
-    .bye_link {}
-
+    .navbar {
+        padding: 0;
+        
+        
+    }
+    .white {
+        height: 68px;
+        display: flex;
+    }
+    .nav-logo {
+        margin: 0;
+        width: 100%;
+    }
+    .bgc {
+        background-color:  #E1EDE6;
+        min-height: 62px;
+        width: 100%;
+    }
+    .btn_menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    .header__burger-btn {
+        display: flex;
+        margin-top: 27px;
+    }
+    .burger {
+    }
+    .nav-list {
+        justify-content: end;
+    }
+    .menu {
+        border: none;
+        width: 24px;
+        height: 24px;
+    }
+    .menu-list {
+        display: none;
+    }
+    .list {
+    }
+    .link-list {
+    }
+    .bye {
+    }
+    .btn_bye {
+        display: flex;
+    }
+    .bye_link {
+    }
+    
 }
