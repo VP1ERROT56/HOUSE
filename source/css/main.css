@@ -270,8 +270,9 @@ body {
         border: none;
         height: 24px;
     }
-
-    .menu-list {
+    .menu-list{
+    }
+    .header .menu-list {
         display: flex;
         max-width: 420px;
         display: block;
