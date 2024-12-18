@@ -14,7 +14,7 @@ body {
     font-family: "Raleway", serif;
 }
 
-.container {
+.container_header {
     min-height: 100px;
     display: flex;
     justify-content: center;
@@ -30,7 +30,16 @@ body {
     padding: 0 165px;
 }
 
-.header__burger-btn{
+.btn_menu {
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 470px;
+}
+
+.header__burger-btn {
     display: none;
     position: relative;
     width: 30px;
@@ -39,7 +48,7 @@ body {
     background-color: #0d00ff;
 }
 
-.burger{
+.burger {
     position: absolute;
     width: 20px;
     height: 3px;
@@ -47,15 +56,15 @@ body {
     left: 5px;
 }
 
-.burger:nth-child(1){
-transform: translateY(-10px);
+.burger:nth-child(1) {
+    transform: translateY(-10px);
 }
 
-.burger:nth-child(2){
-bottom: 13.5px;
+.burger:nth-child(2) {
+    bottom: 13.5px;
 }
 
-.burger:nth-child(3){
+.burger:nth-child(3) {
     transform: translateY(6px);
 }
 
@@ -63,7 +72,7 @@ bottom: 13.5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 470px;
+    width: 100%;
     width: 100%;
 }
 
@@ -89,4 +98,123 @@ bottom: 13.5px;
     font-weight: 500;
     text-decoration: none;
     color: #2C2D35;
+}
+
+.link-list:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.btn_bye {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0 39px;
+    }
+
+    .btn_menu {
+        max-width: 445px;
+    }
+
+    .nav-list {
+        width: 100%;
+    }
+
+    .link-list {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 710px) {
+    .container_header {
+        min-height: 123px;
+    }
+
+    .navbar {
+        display: block;
+        padding: 0 33px;
+        position: relative;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 23px;
+    }
+
+    .btn_menu {
+        max-width: 710px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__burger-btn {}
+
+    .burger {}
+
+    .nav-list {}
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #C3D1C6;
+
+    }
+
+    .menu-list {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 4px;
+    }
+
+    .list {}
+
+    .link-list {}
+
+    .bye {}
+
+    .btn_bye {
+        display: none;
+    }
+
+    .bye_link {}
+}
+
+@media (max-width: 420px) {
+    .container_header {
+        background-color: white;
+    }
+
+    .navbar {}
+
+    .nav-logo {}
+
+    .btn_menu {}
+
+    .header__burger-btn {}
+
+    .burger {}
+
+    .nav-list {}
+
+    .menu {}
+
+    .menu-list {}
+
+    .list {}
+
+    .link-list {}
+
+    .bye {}
+
+    .btn_bye {}
+
+    .bye_link {}
+
 }
