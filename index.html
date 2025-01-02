@@ -92,29 +92,26 @@
                 <div class="btn_list">
                     <ul class="btn_city">
                         <li class="city">
-                            <a class="active" id="fransBtn" href="">
-                                Франция 
+                            <a  class="active" class="button" onclick="showCategory('frans')" id="fransBtn" href="">
+                                Франция
                             </a>
                         </li>
                         <li class="city">
-                            <a id="germanBtn" href="">
+                            <a class="button" onclick="showCategory('german')" id="germanBtn" href="">
                                 Германия
                             </a>
                         </li>
                         <li class="city">
-                            <a id="angliaBtn" href="">
+                            <a class="button" onclick="showCategory('anglia')" id="angliaBtn" href="">
                                 Англия
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="cards">
-
-                <!--frans-->
-
+            <div class="cards" id="cardsContainer">
                 <div class="card" data-category="frans">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina1.png" alt="Охота Амура">
                         </div>
@@ -125,7 +122,7 @@
                             Охота Амура
                         </h3>
                         <h4 class="text">
-                            Холст, масло (50х80) 
+                            Холст, масло (50х80)
                         </h4>
                         <h4 class="prise">
                             14 500 руб
@@ -133,10 +130,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="frans">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina2.png" alt="Дама с собачкой">
                         </div>
@@ -147,7 +144,7 @@
                             Дама с собачкой
                         </h3>
                         <h4 class="text">
-                            Акрил, бумага (50х80)  
+                            Акрил, бумага (50х80)
                         </h4>
                         <h4 class="prise">
                             16 500 руб
@@ -155,10 +152,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="frans">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina3.png" alt=" Процедура">
                         </div>
@@ -169,7 +166,7 @@
                             Процедура
                         </h3>
                         <h4 class="text">
-                            Цветная литография (40х60)  
+                            Цветная литография (40х60)
                         </h4>
                         <h4 class="prise">
                             20 000 руб
@@ -177,10 +174,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="frans">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina4.png" alt="Роза">
                         </div>
@@ -191,7 +188,7 @@
                             Роза
                         </h3>
                         <h4 class="text">
-                            Бумага, акрил (50х80)  
+                            Бумага, акрил (50х80)
                         </h4>
                         <h4 class="prise">
                             12 000 руб
@@ -199,12 +196,13 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
+            
                 <div class="card" data-category="frans">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
-                            <img src="source/img/cartina5.png" alt="Птичья трапеза>
+                            <img src="source/img/cartina6.png" alt="Птичья трапеза">
                         </div>
                         <h4 class="autor">
                             Франсуа Дюпон
@@ -213,7 +211,7 @@
                             Птичья трапеза
                         </h3>
                         <h4 class="text">
-                            Цветная литография (40х60)  
+                            Цветная литография (40х60) 
                         </h4>
                         <h4 class="prise">
                             22 500 руб
@@ -221,10 +219,11 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
+                
                 <div class="card" data-category="frans">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina6.png" alt="Пейзаж с рыбой">
                         </div>
@@ -235,7 +234,7 @@
                             Пейзаж с рыбой
                         </h3>
                         <h4 class="text">
-                            Цветная литография (40х60)  
+                            Цветная литография (40х60)
                         </h4>
                         <h4 class="prise">
                             20 000 руб
@@ -243,13 +242,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
-
-<!--german-->
-
                 <div class="card" data-category="german">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina7.png" alt="Над городом">
                         </div>
@@ -260,7 +256,7 @@
                             Над городом
                         </h3>
                         <h4 class="text">
-                            Цветная литография (40х60)   
+                            Цветная литография (40х60)
                         </h4>
                         <h4 class="prise">
                             16 000 руб
@@ -268,10 +264,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="german">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina8.png" alt="Птенцы">
                         </div>
@@ -282,7 +278,7 @@
                             Птенцы
                         </h3>
                         <h4 class="text">
-                            Холст, масло (50х80)   
+                            Холст, масло (50х80)
                         </h4>
                         <h4 class="prise">
                             14 500 руб
@@ -290,10 +286,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="german">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina9.png" alt="Среди листьев">
                         </div>
@@ -304,7 +300,7 @@
                             Среди листьев
                         </h3>
                         <h4 class="text">
-                            Цветная литография (40х60)  
+                            Цветная литография (40х60)
                         </h4>
                         <h4 class="prise">
                             20 000 руб
@@ -312,10 +308,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="german">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina10.png" alt="Яркая птица">
                         </div>
@@ -326,7 +322,7 @@
                             Яркая птица
                         </h3>
                         <h4 class="text">
-                            Цветная литография (40х60)  
+                            Цветная литография (40х60)
                         </h4>
                         <h4 class="prise">
                             13 000 руб
@@ -334,10 +330,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="german">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina11.png" alt="Дятлы">
                         </div>
@@ -348,7 +344,7 @@
                             Дятлы
                         </h3>
                         <h4 class="text">
-                            Бумага, акрил (50х80)   
+                            Бумага, акрил (50х80)
                         </h4>
                         <h4 class="prise">
                             20 000 руб
@@ -356,10 +352,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="german">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina12.png" alt="Большие воды">
                         </div>
@@ -370,7 +366,7 @@
                             Большие воды
                         </h3>
                         <h4 class="text">
-                            Бумага, акрил (50х80)   
+                            Бумага, акрил (50х80)
                         </h4>
                         <h4 class="prise">
                             23 000 руб
@@ -378,13 +374,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
-
-                <!--anglia-->
-
                 <div class="card" data-category="anglia">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina13.png" alt="Дикий зверь">
                         </div>
@@ -395,7 +388,7 @@
                             Дикий зверь
                         </h3>
                         <h4 class="text">
-                            Акварель, бумага (50х80)    
+                            Акварель, бумага (50х80)
                         </h4>
                         <h4 class="prise">
                             19 500 руб
@@ -403,10 +396,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="anglia">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina14.png" alt="Скалистый берег">
                         </div>
@@ -417,7 +410,7 @@
                             Скалистый берег
                         </h3>
                         <h4 class="text">
-                            Цветная литография (40х60)    
+                            Цветная литография (40х60)
                         </h4>
                         <h4 class="prise">
                             17 500 руб
@@ -425,10 +418,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="anglia">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina15.png" alt="Река и горы">
                         </div>
@@ -439,7 +432,7 @@
                             Река и горы
                         </h3>
                         <h4 class="text">
-                            Акварель, бумага (50х80)  
+                            Акварель, бумага (50х80)
                         </h4>
                         <h4 class="prise">
                             20 500 руб
@@ -447,10 +440,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="anglia">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina16.png" alt="Белый попугайа">
                         </div>
@@ -461,7 +454,7 @@
                             Белый попугай
                         </h3>
                         <h4 class="text">
-                            Цветная литография (40х60)  
+                            Цветная литография (40х60)
                         </h4>
                         <h4 class="prise">
                             15 500 руб
@@ -469,10 +462,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="anglia">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina17.png" alt="Ночная рыба">
                         </div>
@@ -483,7 +476,7 @@
                             Ночная рыба
                         </h3>
                         <h4 class="text">
-                            Бумага, акрил (50х80) 
+                            Бумага, акрил (50х80)
                         </h4>
                         <h4 class="prise">
                             12 500 руб
@@ -491,10 +484,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
                 <div class="card" data-category="anglia">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="cartina">
                             <img src="source/img/cartina18.png" alt="Рыжий кот">
                         </div>
@@ -505,7 +498,7 @@
                             Рыжий кот
                         </h3>
                         <h4 class="text">
-                            Цветная литография (40х60)   
+                            Цветная литография (40х60)
                         </h4>
                         <h4 class="prise">
                             21 000 руб
@@ -513,11 +506,10 @@
                         <button class="basket">
                             В корзину
                         </button>
-                    </div> 
+                    </div>
                 </div>
-                -------
             </div>
-            
+
     </section>
 </body>
 

@@ -220,7 +220,6 @@ body {
 .btn_city {
     display: flex;
     list-style-type: none;
-    width: 428px;
     margin: 0;
     padding: 0;
     gap: 32px;
@@ -663,6 +662,7 @@ a.active {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 30px;
     row-gap: 30px;
+    column-gap: 30px;
 }
 
 .card {
