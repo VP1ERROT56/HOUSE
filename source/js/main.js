@@ -42,8 +42,6 @@ document.querySelectorAll('.btn_city a').forEach(link => {
         updateActiveLink(this); // Обновляем активную ссылку
     });
 });
-window.onload = init;
-
-
-// Инициализация - показываем все карточки по умолчанию
-showCategory('frans'); // Можно заменить на 'all', если нужно изначально показывать все карточки
+window.onload = function() {
+    showCategory('frans'); // Замените 'fruit' на желаемую категорию по умолчанию
+}; // Можно заменить на 'all', если нужно изначально показывать все карточки
