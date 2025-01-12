@@ -194,6 +194,9 @@ body {
 
 /*section two*/
 /*nav*/
+.catalog{
+    margin-bottom: 50px;
+}
 .container_catalog {
     padding: 0 165px;
     margin-top: 70px;
