@@ -32,9 +32,11 @@ body {
     justify-content: space-between;
     padding: 0 165px;
 }
-.white{
+
+.white {
     margin: 0;
 }
+
 .bgc {
     display: flex;
     max-width: 470px;
@@ -254,31 +256,37 @@ a.active {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* Адаптивные колонки с минимальной шириной 350px */
+    max-width: 100%;
+    /* Максимальная ширина 100% от родителя */
+    margin: 0 auto;
+    /* Центрирование контейнера если необходимо */
     margin-top: 30px;
     row-gap: 30px;
-    column-gap: 30px;
-    max-width: 100%;
 }
 
 .card {
-    width: 350px;
-    height: 730px;
     background-color: #E1EDE6;
+    width: auto;
 }
 
 .container {
     padding: 20px 20px 30px 20px;
+    max-width: 350px;
+    width: 100%;
 }
 
-.cartina {}
+.cartina img {
+
+    max-width: 310px;
+}
 
 .autor {
     margin: 20px 0 0 0;
     color: rgb(134, 146, 139);
     font-size: 18px;
     font-weight: 400;
-    ;
     text-align: left;
 }
 
@@ -311,15 +319,23 @@ a.active {
 
 .basket {
     margin-top: 20px;
-    width: 310px;
+    max-width: 310px;
+    width: 100%;
     height: 65px;
     background-color: #E1EDE6;
-    color:#598D66;
+    color: #598D66;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     border: 1px solid #598D66;
     cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.basket:hover {
+    transform: scale(1.05);
+    color: white;
+    background-color: #376B44;
 }
 
 
@@ -475,6 +491,7 @@ a.active {
         display: flex;
         margin-top: 11px;
         position: relative;
+        margin-left: 0;
     }
 
     .burger {
@@ -517,6 +534,7 @@ a.active {
 
     .btn_bye {
         display: flex;
+        margin-right: 0;
     }
 
     .btn_bye:hover {
@@ -727,9 +745,86 @@ a.active {
 
 }
 
-/*cards*/
-@media (max-width: 1190px){
-.cards{
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1430px) {
+    .cards {}
+
+    .card {
+        max-width: 330px;
+        max-height: 730px;
+        width: 100%;
+    }
+
+    .cartina img {
+        max-width: 290px;
+        min-height: 422px;
+        width: 100%;
+    }
+
+    .autor {}
+
+    .title {}
+
+    .text {}
+
+    .prise {}
+
+    .basket {
+        max-width: 290px;
+        max-height: 65px;
+        width: 100%;
+    }
+
 }
+
+/*cards*/
+@media (max-width: 1380px) {
+    .cards {
+        max-width: 690px;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        column-gap: 30px;
+    }
+}
+
+@media (max-width: 402px) {
+    .cards {
+        max-width: 690px;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        column-gap: 30px;
+    }
+    .card {
+        max-width: 290px;
+        max-height: 514px;
+    }
+    .cartina{
+        max-width: 250px;
+        max-height: 250px;
+        overflow: hidden;
+    }
+    .cartina img {
+        max-width: 250px;
+        height: auto;
+    }
+    .autor {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .prise {
+        font-size: 20px;
+    }
+    .basket {
+        max-width: 250px;
+        max-height: 50px;
+        font-size: 18px;
+        margin-top: 6px;
+    }
+    .product{
+        margin-bottom: 9px;
+    }
+    
 }
